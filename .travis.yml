@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t muthu/docker_react -f Dockerfile.dev .
+  - docker build -t suresh1502067/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true muthu/docker_react npm test
+  - docker run -e CI=true suresh1502067/docker-react npm test
